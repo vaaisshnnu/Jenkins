@@ -1,0 +1,33 @@
+# Create a Jenkins Freestyle Project with parameterized builds that displays a custom welcome message.
+
+✅ Step-by-Step Guide to Create a Parameterized Jenkins Job
+
+Step 1: Access Jenkins
+Open Jenkins: http://<your-ec2-public-ip>:8080
+Login with your credentials.
+
+Step 2: Create a New Freestyle Project
+Click “New Item”.
+Name it: WelcomeMessageBuild.
+Select “Freestyle project”.
+Click OK.
+
+Step 3: Enable Parameterized Build
+On the configuration page, check “This project is parameterized”.
+Click “Add Parameter” → “String Parameter”.
+Fill in below deatils as:
+Name: USER_NAME
+Default Value: Ganga Vaishnu Reddy. Emani
+Description: Enter your name
+
+Step 4: Add Build Step
+Scroll to Build section.
+Click “Add build step” → “Execute shell”.
+Paste the following shell script:
+
+Step 5: Save and Run
+Click “Save”.
+Click “Build with Parameters”.
+Enter your name or use the default.
+Click “Build”.
+Go to the build → Console Output to see the message.
