@@ -1,0 +1,33 @@
+Comcept Example : Let's say you've an shell scipt whihc you've created in you ec2 instaance and You want Jenkis to run that file when you build a job in Jenkins GUI dashboard.
+
+Here’s a step-by-step guide to create a Jenkins Freestyle Project that runs an existing file (like a .sh or .py script) on your EC2 instance:
+
+✅ Prerequisites
+Jenkins is installed and running on your EC2 instance.
+The file you want to run (e.g., myscript.sh) already exists on the EC2 instance.
+Jenkins has permission to execute the file (check file permissions and ownership).
+Jenkins is running as a user with access to the file path.
+
+# 🛠️ Step-by-Step Jenkins Configuration
+Step 1: Access Jenkins
+Open your browser: http://<your-ec2-public-ip>:8080
+Login with your Jenkins credentials.
+Step 2: Create a New Freestyle Project
+Click “New Item”.
+Enter a name like: RunExistingScript.
+Select “Freestyle project”.
+Click OK.
+Step 3: Configure the Project
+General Section
+Add a description (optional):
+“This job runs an existing script file on the EC2 instance.”
+Build Section
+Click “Add build step” → “Execute shell”.
+Enter the command to run your file. For example:
+
+# 🔐 Make sure the Jenkins user has execute permissions on the file.
+
+Step 4: Save and Build
+Click “Save”.
+Click “Build Now” to run the job.
+Click on the build number → Console Output to verify the script ran successfully.
