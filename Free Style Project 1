@@ -1,6 +1,6 @@
 #Create a Jenkins Freestyle Project to create a shell file from Jenkins dashboard in my EC2 and to create a file with it's output 
 
-Here’s a **step-by-step guide** to create a **Jenkins Freestyle Project** that:
+Here’s a **step-by-step guide** to create a **Jenkins Freestyle Project** that-
 
 1. **Creates a shell script file** on your EC2 instance.
 2. **Executes the script**.
