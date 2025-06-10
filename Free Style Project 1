@@ -1,4 +1,4 @@
-Concept Example : You want to create a Jenkins Freestyle Project to create a shell file from Jenkins dashboard in my EC2 and to create a file with it's output.
+Concept Example : You want to create a Jenkins Freestyle Project to create a shell file from Jenkins dashboard in my EC2 and to create a file with the output followed.
 
 Here’s a **step-by-step guide** to create a **Jenkins Freestyle Project** that-
 
