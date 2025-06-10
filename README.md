@@ -11,5 +11,5 @@ Jenkins Freestyle Project that runs an existing file (like a .sh or .py script) 
 # Free Style Project 3 :
 Jenkins Freestyle Project that runs an existing file (like a .sh or .py script) on your EC2 instance.
 
-# Free Style Project 4 : "This Project is Parameterized-String Parameter"
-Jenkins Freestyle Project that Create a parameterized builds that displays a custom welcome message.
+# Free Style Project 4 : "This Project is Parameterized"
+Jenkins Freestyle Project {String Parameter} that Create a parameterized builds that displays a custom welcome message 
