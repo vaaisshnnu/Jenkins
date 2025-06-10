@@ -1,4 +1,4 @@
-Comcept Example : Let's say you've an shell scipt whihc you've created in you ec2 instaance and You want Jenkis to run that file when you build a job in Jenkins GUI dashboard.
+Concept Example : Let's say you've an shell script which you've created in you ec2 instaance and You want Jenkis to run that file when you build a job in Jenkins GUI dashboard.
 
 Here’s a step-by-step guide to create a Jenkins Freestyle Project that runs an existing file (like a .sh or .py script) on your EC2 instance:
 
