@@ -1,0 +1,49 @@
+You want to create a Jenkins Freestyle Project with throttling enabled (i.e., limiting the number of concurrent builds or builds per time period), you can use the Throttle Concurrent Builds Plugin.
+
+# Here’s a step-by-step guide** to set up a project called Throttle build
+
+---
+
+### ✅ **Step 1: Install the Plugin (if not already installed)**
+
+1. Go to **Jenkins Dashboard** → **Manage Jenkins** → **Manage Plugins**.
+2. Under the **Available** tab, search for:
+   - **Throttle Concurrent Builds Plugin**
+3. Check it and click **Install without restart**.
+
+---
+
+### 🛠️ **Step 2: Create the Freestyle Project**
+
+1. Go to Jenkins Dashboard → **New Item**.
+2. Enter the name: `Throttle build`.
+3. Select **Freestyle project**.
+4. Click **OK**.
+
+---
+
+### ⚙️ **Step 3: Configure Throttle Settings**
+
+1. On the configuration page, scroll to **Build Environment**.
+2. Check **“Throttle builds”**.
+3. Configure the following:
+   - **Throttle this project as part of one or more categories**:  
+     - You can create a new category like `LimitedBuilds`.
+     - Set **Maximum Total Concurrent Builds** (e.g., 2).
+     - Set **Maximum Concurrent Builds Per Node** (e.g., 1).
+   - Or, **Throttle this project alone**:
+     - Set limits directly for this job.
+
+> 📝 This ensures that only a limited number of builds run concurrently, either globally or per node.
+
+---
+
+
+### ✅ **Step 4: Save and Test**
+
+1. Click **Save**.
+2. Trigger multiple builds using **Build Now**.
+3. Observe how Jenkins queues builds based on your throttle settings.
+
+
+# Note :When you apply and save --> You can't run the builds beyond the number you've set in the specified timline
