@@ -1,0 +1,61 @@
+Context Example: You want to Create a Jenkins Freestyle Project to create & execute a shell file with apache installation commands in any preferred location and Execute the shell file using the Jenkins job and to create an output in text file
+and then access the apache default page on browser
+
+# ✅ Prerequisites
+Jenkins is installed and running on your EC2 instance (Amazon Linux 2 or Ubuntu).
+Jenkins has sudo privileges (or passwordless sudo) to install packages.
+Port 80 (HTTP) is open in your EC2 security group.
+
+🛠️ Step-by-Step Jenkins Configuration
+Step 1: Access Jenkins
+Go to: http://<your-ec2-public-ip>:8080
+Login with your credentials.
+
+Step 2: Create a New Freestyle Project
+Click “New Item”.
+Name it: InstallApacheViaScript.
+Select “Freestyle project”.
+Click OK.
+
+Step 3: Configure the Project
+General Section
+Add a description:
+“This job creates and runs a shell script to install Apache and logs the output.”
+Build Section
+Click “Add build step” → “Execute shell”.
+
+Paste the following script:
+🛡️ This script works for both Ubuntu (apt) and Amazon Linux/CentOS (yum).
+==========================================================================
+#!/bin/bash
+# Define paths
+SCRIPT_PATH="/tmp/install_apache.sh"
+OUTPUT_PATH="/tmp/apache_install_output.txt"
+
+# Create the shell script
+cat << 'EOF' > $SCRIPT_PATH
+#!/bin/bash
+echo "Starting Apache installation..."
+sudo apt update -y || sudo yum update -y
+sudo apt install apache2 -y || sudo yum install httpd -y
+sudo systemctl start apache2 || sudo systemctl start httpd
+sudo systemctl enable apache2 || sudo systemctl enable httpd
+echo "Apache installation completed."
+EOF
+
+# Make it executable
+chmod +x $SCRIPT_PATH
+
+# Run the script and save output
+$SCRIPT_PATH > $OUTPUT_PATH 2>&1
+==========================================================================
+
+Step 4: Save and Build
+Click “Save”.
+Click “Build Now”.
+Click the build number → Console Output to verify success.
+
+Step 5: Verify Apache Installation
+Open your browser and go to:
+http://<your-ec2-public-ip>
+You should see the Apache default welcome page.
