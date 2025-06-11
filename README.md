@@ -13,6 +13,7 @@ This repository contains a collection of Jenkins Freestyle Projects with detaile
 ## Project Details ##
 
 **** 1. Create a Shell Script and Execute It ****
+
 Purpose:  
 I want to create a Jenkins Freestyle Project to create a shell file from Jenkins dashboard in my EC2 and to create a file with the output followed.
 
@@ -28,6 +29,7 @@ Optional Enhancements:
 ---
 
 **** 2. Jenkins build run an existing file which is present in my EC2 instance from GUI Dashboard ****
+
 Purpose: 
 Let's say you've an shell script which you've created in you ec2 instaance and You want Jenkis to run that file when you build a job in Jenkins GUI Dashborad
 
@@ -52,6 +54,7 @@ Key Steps:
 ---
 
 **** 4. Parameterized Build with Welcome Message ****
+
 Purpose:  
 Create a parameterized build that displays a custom welcome message.
 
@@ -62,6 +65,7 @@ Key Steps:
 ---
 
 **** 5. Throttle Build ****
+
 Purpose:  
 Restrict the number of concurrent builds to prevent resource exhaustion and conflicts.
 Key Steps:
@@ -84,6 +88,7 @@ Key Steps:
 ---
 
 **** 7. Build Code from GitHub Repo with Maven ****
+
 Purpose:  
 Clone code from a GitHub repository and build it using Maven- I want Jenkins to Integrate Public GitHub Repo to the EC2 instance (In Manual case, We manually type "git clone <git_hub_repo>" , Here we're automating this )
 Key Steps:
