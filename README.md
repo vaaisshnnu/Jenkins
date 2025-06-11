@@ -3,7 +3,6 @@
 Jenkins Freestyle Projects - Here you will have the Step by Step Documentation of the Jenkins Freestyle Projects done by me till now!
 
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)]()
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 [![Connect on LinkedIn](https://img.shields.io/badge/LinkedIn-GangaVaishnuReddy-blue?logo=linkedin)](https://www.linkedin.com/in/vaaisshnnu-reddy/)
 
 
@@ -106,8 +105,4 @@ Key Steps:
 [![Connect on LinkedIn](https://img.shields.io/badge/LinkedIn-GangaVaishnuReddy-blue?logo=linkedin)](https://www.linkedin.com/in/vaaisshnnu-reddy/)
 
 ---
-
-## License
-
-This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
