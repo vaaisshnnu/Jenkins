@@ -42,6 +42,7 @@ Key Steps:
 ---
 
 **** 3. Create and Run a Shell Script to install Apache server on my EC2 and Access web Page
+
 Purpose: 
 Create a shell script to install Apache, execute it, and save the output to a text file.
 
