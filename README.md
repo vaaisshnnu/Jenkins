@@ -50,6 +50,7 @@ Key Steps:
 - Save and run the job.
 - Verify Apache installation by accessing the default web page.
 
+---
 
 **** 4. Parameterized Build with Welcome Message ****
 Purpose:  
@@ -80,7 +81,6 @@ Key Steps:
 - Create a new Freestyle project.
 - Configure the GitHub repository URL.
 - Add a build step to list the contents of the cloned repo.
-
 
 ---
 
