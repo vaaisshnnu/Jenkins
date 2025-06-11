@@ -4,7 +4,7 @@ Jenkins Freestyle Projects - Here you will have the Step by Step Documentation o
 
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
-[![Connect on LinkedIn](https://img.shields.io/badge/LinkedIn-Ganga Vaishnu Reddy-blue?logo=linkedin)](https://www.linkedin.com/in/vaaisshnnu-reddy/)
+[![Connect on LinkedIn](https://img.shields.io/badge/LinkedIn-GangaVaishnuReddy-blue?logo=linkedin)](https://www.linkedin.com/in/vaaisshnnu-reddy/)
 
 
 This repository contains a collection of Jenkins Freestyle Projects with detailed steps and configurations. Each project demonstrates different Jenkins capabilities and integrations.
