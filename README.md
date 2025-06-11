@@ -100,7 +100,7 @@ Key Steps:
 2. Follow the detailed steps for each project to configure and run the Jenkins jobs.
 3. Customize the projects as needed for your specific use case.
 
-## Connect
+## Does the repo helped in your learning Path, Yes ? Connect Me on
 
 [![Connect on LinkedIn](https://img.shields.io/badge/LinkedIn-GangaVaishnuReddy-blue?logo=linkedin)](https://www.linkedin.com/in/vaaisshnnu-reddy/)
 
