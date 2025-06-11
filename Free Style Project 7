@@ -1,0 +1,70 @@
+***** Create a Jenkins Freestyle Project Building the code available in GitHub repo" and Invoke top level maven targets
+
+Here’s a **step-by-step guide** to create a **Jenkins Freestyle Project** that:
+1. Clones code from a GitHub repository and  
+2. Builds it using Maven by invoking top-level Maven targets like clean package
+
+---
+
+### ✅ **Prerequisites**
+
+- Jenkins is installed and running.
+- Git and Maven are installed on the Jenkins server.
+- The Git plugin and Maven Integration plugin are installed in Jenkins.
+- Your GitHub repository contains a valid `pom.xml` file.
+
+---
+
+### 🛠️ **Step-by-Step: Jenkins Freestyle Project with Maven Build**
+
+#### **Step 1: Install Required Plugins (if not already installed)**
+
+1. Go to Manage Jenkins → Manage Plugins
+2. Under the Available tab, search for:
+   - Git plugin
+   - Maven Integration plugin
+3. Install them and restart Jenkins if needed.
+
+---
+
+#### Step 2: Create a New Freestyle Project
+
+1. Go to Jenkins Dashboard → New Item
+2. Name it: `GitHub-Maven-Build`.
+3. Select Freestyle project.
+4. Click OK
+
+---
+
+#### Step 3: Configure GitHub Repository
+
+1. In the Source Code Management section, select Git
+2. Enter your public GitHub repo URL for example:
+
+   ```
+   https://github.com/username/repository-name.git
+   ```
+
+3. Leave credentials empty for public repos.
+4. Set the branch to `*/main` or `*/master` as appropriate.
+
+---
+
+#### **Step 4: Configure Maven Build**
+
+1. Scroll to the **Build** section.
+2. Click **“Add build step”** → **“Invoke top-level Maven targets”**.
+3. Fill in:
+   - **Goals**: `clean package`
+This will clean any existing target folder whihc has war/ jar / ear file and then Complie the source code and Builds the war file
+   - **POM**: Leave as `pom.xml` (default)
+
+> In short: 📝 This will clean the previous build and install the project dependencies and artifacts.
+
+---
+
+#### **Step 5: Save and Build**
+
+1. Click Save
+2. Click Build Now
+3. Click on the build number → Console Output to verify the Maven build process.
