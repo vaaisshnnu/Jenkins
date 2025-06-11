@@ -20,6 +20,20 @@ Click OK.
 Step 3: Configure the Project
 General Section
 Add a description (optional):
+
+===================== Script I used =============================
+#!/bin/bash
+
+# Path to your script
+SCRIPT_PATH="/home/ec2-user/myscript.sh"
+
+# Make sure it's executable
+chmod +x $SCRIPT_PATH
+
+# Run the script
+$SCRIPT_PATH
+============================================================
+
 “This job runs an existing script file on the EC2 instance.”
 Build Section
 Click “Add build step” → “Execute shell”.
