@@ -1,4 +1,4 @@
-You wnat Jenkins to Integrate Public GitHub Repo to the EC2 instance (Like as we manually type "git clone <git_hub_repo>" )
+You want Jenkins to Integrate Public GitHub Repo to the EC2 instance (In Manual case, We manually type "git clone <git_hub_repo>" , Here we'are automating this )
 
 Here’s a **step-by-step guide** to create a **Jenkins Freestyle Project** that integrates with a **public GitHub repository**:
 
